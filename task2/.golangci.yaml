@@ -1,0 +1,24 @@
+version: "2"
+
+linters:
+  default: none
+  enable:
+    - errcheck
+    - govet
+    - gosec
+    - revive
+    - unused
+    - whitespace
+  settings:
+    revive:
+      rules:
+        - name: var-naming
+          disabled: true
+formatters:
+  enable:
+    - goimports
+    - gofmt
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
